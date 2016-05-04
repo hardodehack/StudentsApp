@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+	.table1
+	{
+		margin-top:200px;
+		margin-left:450px;
+		margin-right:550px;
+	}
+	.table2
+	{
+		background:cyan;
+		border:2px solid black;
+		border-radius:10px;
+		padding:30px;
+	}
+	.ft
+				{
+					border:1px solid green;
+					background:skyblue;
+					text-align:center;
+					margin-top:150px;
+				}
+</style>
+</head>
+
+
+<body>
+	<h1><marquee><font color='green'>Welcome to Students App</font></marquee></h1>
+	<div class="table1">
+	<div class="table2">
+	<form method="post" action="http://localhost:8080/StudentsApp/home">
+		<table>
+			<tr>
+				<td> Reg No.</td>
+				<td><input type="text" placeholder="enter regNo here" name="regNoI" required="required"></td>
+			</tr>
+			<tr>
+				<td> Password</td>
+				<td><input type="password" placeholder="enter password here" name="passI" required="required"></td>
+			</tr>
+			<tr>
+				
+				<td><input type="submit" value="Login"></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	</div>
+	<div class='ft'>
+			<p>&copy;2016 Hardik Patel</p>
+	</div>
+</body>
+</html>

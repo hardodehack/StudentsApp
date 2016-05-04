@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<style>
+		body{
+			margin:0;
+			padding:0;
+		}
+			.table1
+	{
+		margin-top:200px;
+		margin-left:450px;
+		margin-right:400px;
+	}
+	.table2
+	{
+		background:cyan;
+		border:2px solid black;
+		border-radius:10px;
+		padding:30px;
+	}
+		</style>
+			
+	</head>
+	
+	
+	<body>
+	
+		<form method='post' action='http://localhost:8080/StudentsApp/CreateProfile'>
+		
+		<div class="table1">
+		<h1 style="color:brown; margin-left:40px;"><br>Student Profile Creation Form</h1>	
+		<div class="table2">
+		<table>
+			<tr>
+				<td>Reg No </td>
+				<td><input type=number name='rN' placeholder='enter regNo here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>First Name</td>
+				<td><input type=text name='fn' placeholder='enter FirstName here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>Middle Name</td>
+				<td><input type=text name='mn' placeholder='enter MiddleName here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type=text name='ln' placeholder='enter LastName here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>Guardian First Name</td>
+				<td><input type=text name='gfn' placeholder='enter Guardian FirstName here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>Guardian Middle Name</td>
+				<td><input type=text name='gmn' placeholder='enter Guardian MiddleName here...' required ='required'></td>
+			</tr>
+			<tr>
+				<td>Guardian Last Name</td>
+				<td><input type=text name='gln' placeholder='enter Guardian LastName here...' required ='required'></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type=password name='pass' placeholder='enter Password here...' required ='required'></td>
+			</tr>
+			<tr>
+				<td>Admin ?</td>
+				<td><select name='isAdmin'>
+					<option>-----</option>
+					<option value='y'>Yes</option>
+					<option value='n'>No</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input type='submit' value='Submit'></td>
+				<td><input type='reset' value='Reset'></td>
+			</tr>
+		</table>
+		</div>
+		</div>
+	</form>
+	
+</body>
+</html>

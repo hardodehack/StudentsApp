@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<style>
+			body
+			{
+				background-image:url("studentBack.jpg");
+				background-repeat:no-repeat;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<h1><font color='Brown'>Student Profile Creation Form</font></h1>
+		<form method='get' action='#'>
+		<table>
+			<tr>
+				<td>Reg No </td>
+				<td><input type=number name='rN' placeholder='enter regNo here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>First Name</td>
+				<td><input type=text name='fn' placeholder='enter FirstName here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>Middle Name</td>
+				<td><input type=text name='mn' placeholder='enter MiddleName here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type=text name='ln' placeholder='enter LastName here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>Guardian First Name</td>
+				<td><input type=text name='gfn' placeholder='enter Guardian FirstName here...' required='required'></td>
+			</tr>
+			<tr>
+				<td>Guardian Middle Name</td>
+				<td><input type=text name='gmn' placeholder='enter Guardian MiddleName here...' required ='required'></td>
+			</tr>
+			<tr>
+				<td>Guardian Last Name</td>
+				<td><input type=text name='gln' placeholder='enter Guardian LastName here...' required ='required'></td>
+			</tr>
+			<tr>
+				<td>Admin ?</td>
+				<td><select>
+					<option>-----</option>
+					<option name='Yes' value='y'>Yes</option>
+					<option name='No' value='n'/>No</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input type='submit' value='Submit'></td>
+				<td><input type='reset' value='Reset'></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+create procedure CrePro
+(
+	IN i_regNo int(10),
+	IN i_fname varchar(50),
+	IN i_mname varchar(50),
+	IN i_lname varchar(50),
+	IN i_gfname varchar(50),
+	IN i_gmname varchar(50),
+	IN i_glname varchar(50),
+	IN i_isadmin varchar(20),
+	IN i_pass varchar(50)
+	
+)
+
+begin
+
+	insert into sinfo values(i_regNo,i_fname,i_mname,i_lname);
+	insert into ginfo values(i_regNo,i_gfname,i_gmname,i_glname);
+	insert into soinfo values(i_regNo,i_isadmin,i_pass);
+	
+end@
